@@ -15,14 +15,14 @@ int neg9 = 5;
 //"neg6" is connected to the 8th digital pin of arduino
 //"neg7" is connected to the 7th digital pin of arduino
 //"neg8" is connected to the 6th digital pin of arduino
-//"negg" is connected to the 5th digital pin of arduino
+//"neg9" is connected to the 5th digital pin of arduino
 int pos1 = 4;
 int pos2 = 3;
 int pos3 = 2;
 //"pos1" is connected to the 4th digital pin of arduino
 //"pos2" is connected to the 3rd digital pin of arduino
 //"'pos3" is connected to the 2nd digital pin of arduino
-int delay_time = 100, j = 0;
+int delay_time = 100;
 // the setup routine runs once when you press reset:
 void setup() {
   // initialize the digital pin as an output.
@@ -43,7 +43,6 @@ void setup() {
 
 // the loop routine runs over and over again forever:
 void loop() {
-  for (j = 0; j < 6; j++) {
     digitalWrite(pos1, HIGH);
     digitalWrite(pos2, HIGH);
     digitalWrite(pos3, LOW);
@@ -56,6 +55,5 @@ void loop() {
     digitalWrite(neg7, LOW);
     digitalWrite(neg8, LOW);
     digitalWrite(neg9, HIGH);
-    delay(150);
-  }
+    delay(delay_time);
 }
